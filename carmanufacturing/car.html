@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Manufacturing Process</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Car Manufacturing Process</h1>
+  
+  <div class="process-step" id="step1">
+    <h2>Step 1: Design</h2>
+    <p>Design the car model and create blueprints.</p>
+    <button onclick="nextStep('step1', 'step2')">Next</button>
+  </div>
+  
+  <div class="process-step" id="step2" style="display: none;">
+    <h2>Step 2: Assembly</h2>
+    <p>Assemble the car parts according to the design.</p>
+    <button onclick="nextStep('step2', 'step3')">Next</button>
+  </div>
+  
+  <div class="process-step" id="step3" style="display: none;">
+    <h2>Step 3: Painting</h2>
+    <p>Paint the car in the desired color.</p>
+    <button onclick="nextStep('step3', 'step4')">Next</button>
+  </div>
+  
+  <div class="process-step" id="step4" style="display: none;">
+    <h2>Step 4: Inspection</h2>
+    <p>Inspect the car for quality assurance.</p>
+    <button onclick="nextStep('step4', 'complete')">Complete</button>
+  </div>
+  
+  <div id="complete" style="display: none;">
+    <h2>Manufacturing Complete!</h2>
+    <p>The car has been successfully manufactured.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
