@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bus Schedule</h1>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Bus Number</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Route</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>8:00 AM</td>
+                <td>9:00 AM</td>
+                <td>Downtown - Uptown</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>9:30 AM</td>
+                <td>10:30 AM</td>
+                <td>Midtown - Suburbs</td>
+            </tr>
+            <tr>
+                <td>303</td>
+                <td>11:00 AM</td>
+                <td>12:00 PM</td>
+                <td>Airport - Central Station</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>1:00 PM</td>
+                <td>2:00 PM</td>
+                <td>City Center - Eastside</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
